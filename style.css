@@ -1,0 +1,126 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+html,
+body {
+    width: 100%;
+    height: 100%;
+}
+
+.main {
+    width: 100%;
+    height: 100%;
+    position: relative;
+}
+
+.nav {
+    height: 70px;
+    width: 100%;
+    border-bottom: 2px solid #000;
+    /* background-color: crimson; */
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 5vw;
+}
+
+.nav h2 {
+    font-size: 3vw;
+    font: 700;
+}
+
+.nav h4 {
+    font-size: 1vw;
+}
+
+.nav-part2 {
+    display: flex;
+    gap: 3vw;
+    align-items: center;
+}
+
+.nav i {
+    font-weight: 700;
+    display: none;
+}
+
+/* COntent portion */
+/* calc funtion is for artithmetic operation ex we give nav 100px height so by this method it willl get the 
+remaing height without any other scroll bar */
+.content {
+    width: 100%;
+    height: calc(100% - 100px);
+    display: flex;
+    position: relative;
+}
+
+.left{
+    height: 100%;
+    width: 55%;
+    /* background-color: crimson; */
+    padding: 5vw 5vw;
+}
+
+.left h1{
+    font-size:4vw;
+    line-height: 3.5vw;
+}
+.left h1 span{
+    color: lightseagreen;
+}
+
+.left p{
+    font-size: 1.25vw;
+    width: 80%;
+    color: rgb(88, 86, 86);
+    margin-top: 2vw;
+    margin-bottom: 3vw;
+}
+button{
+    font-size: 1.1vw;
+    color: white;
+    background-color: lightseagreen;
+    border: none;
+    border-radius: 7px;
+    font-weight: 700;
+    padding: 1.1vw 1.2vw;
+
+}
+.right{
+    height: 100%;
+    width: 45%;
+    /* background-color: rgb(183, 152, 61); */
+}
+
+
+
+
+
+/* Responsive portion  */
+
+@media (max-width:600px) {
+    .nav {
+        background-color: royalblue;
+        color: black;
+        height: 50px;
+    }
+
+    .nav h2 {
+        font-size: 5vw;
+        padding: 0 7vw;
+    }
+
+    .nav h4 {
+        font-size: 4vw;
+        display: none;
+    }
+
+    .nav i {
+        display: block;
+        font-size: 5vw;
+    }
+
+}
