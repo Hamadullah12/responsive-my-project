@@ -19,7 +19,7 @@ body {
 .nav {
     height: 70px;
     width: 100%;
-    border-bottom: 2px solid #000;
+    /* border-bottom: 2px solid #000; */
     /* background-color: crimson; */
     display: flex;
     justify-content: space-between;
@@ -28,14 +28,23 @@ body {
 }
 
 .nav h2 {
-    font-size: 3vw;
+    font-size: 2vw;
     font: 700;
 }
 
 .nav h4 {
-    font-size: 1vw;
+    font-size: 1.1vw;
 }
+.nav button{
+    font-size: 1.1vw;
+    color: white;
+    background-color: #FF735C;
+    border: none;
+    border-radius: 7px;
+    font-weight: 700;
+    padding: 0.6vw 1.4vw;
 
+}
 .nav-part2 {
     display: flex;
     gap: 3vw;
@@ -69,7 +78,7 @@ remaing height without any other scroll bar */
     line-height: 3.5vw;
 }
 .left h1 span{
-    color: lightseagreen;
+    color:#FF735C;
 }
 
 .left p{
@@ -79,10 +88,10 @@ remaing height without any other scroll bar */
     margin-top: 2vw;
     margin-bottom: 3vw;
 }
-button{
+.content button{
     font-size: 1.1vw;
     color: white;
-    background-color: lightseagreen;
+    background-color: #FF735C;
     border: none;
     border-radius: 7px;
     font-weight: 700;
@@ -95,7 +104,10 @@ button{
     /* background-color: rgb(183, 152, 61); */
 }
 
-
+.right img{
+    height: 100%;
+    width: 100%;
+}
 
 
 
